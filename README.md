@@ -7,4 +7,4 @@ shows trending Movies and TV Series.
 - Used The Movie Db API to fetch the data from the server
 
 # Live Project link :
-(https://myentertainment-hub.netlify.app)
+https://myentertainment-hub.netlify.app
