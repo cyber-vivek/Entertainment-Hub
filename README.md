@@ -5,3 +5,6 @@ shows trending Movies and TV Series.
 - Added the functionalities of selecting different Genres using Material-UI Chip, searching movies and
 - TV Series by name to make it more user interactive.
 - Used The Movie Db API to fetch the data from the server
+
+# Live Project link :
+(https://myentertainment-hub.netlify.app)
