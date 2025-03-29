@@ -5,6 +5,7 @@ import SearchIcon from "@material-ui/icons/Search"
 import axios from 'axios';
 import { Singlecontent } from '../../Singlecontent/Singlecontent';
 import { Custompagination } from '../../components/Pagination/Custompagination';
+import { getSearchResult } from '../../services/dataService';
 
 export const Search = () => {
 
@@ -23,9 +24,7 @@ export const Search = () => {
         },
     })
     const fetchSearch = async ()=>{
-        const {data} = await axios.get(
-            `https://api.themoviedb.org/3/search/${type?"tv":"movie"}?api_key=${process.env.REACT_APP_API_KEY }&language=en-US&query=${searchText}&page=${page}&include_adult=false`
-        );
+        const {data} = await getSearchResult(searchText, page, type)
         setcontent(data.results);
         setnumOfPages(data.total_pages);
     }

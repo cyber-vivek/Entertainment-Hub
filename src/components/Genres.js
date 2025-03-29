@@ -31,8 +31,6 @@ export const Genres = (
          
             setgenres(data.genres);
     };
-
-    // console.log(genres);
     useEffect(() => {
         fetchGenres();
         return () => {

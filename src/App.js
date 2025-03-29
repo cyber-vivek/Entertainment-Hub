@@ -7,6 +7,7 @@ import {Trending} from './pages/Trending/Trending'
 import {Movies} from './pages/Movies/Movies'
 import {Series} from './pages/Series/Series'
 import {Search} from './pages/Search/Search'
+import MoveDetail from './pages/MovieDetail/MoveDetail';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path='/movies' component={Movies}/>
           <Route path='/series' component={Series}/>
           <Route path='/search' component={Search}/>
+          <Route path='/detail/:content/:id' component={MoveDetail}/>
         </Switch>
       </Container>
     </div>

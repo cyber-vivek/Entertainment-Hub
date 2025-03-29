@@ -8,16 +8,6 @@ const DarkTheme = createTheme({
         type:'dark',
     }
 })
-// const DarkTheme = createTheme({
-//     palette: {
-//         primary: {
-//           main: purple[500],
-//         },
-//         secondary: {
-//           main: green[500],
-//         },
-//       },
-// })
 
 export const Custompagination = ({setpage,numofpages = 10}) => {
     const handlePageChange = (page)=>{
@@ -36,7 +26,6 @@ export const Custompagination = ({setpage,numofpages = 10}) => {
         >
 
             <ThemeProvider theme = {DarkTheme}>
-
             <Pagination hidePrevButton hideNextButton count = {numofpages} color = "primary" onChange = {(e)=>handlePageChange(e.target.textContent)}/>
             </ThemeProvider>
         </div>
